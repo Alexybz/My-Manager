@@ -728,18 +728,18 @@ export default function AllIcons() {
   }
 
   return (
-    <div className="flex flex-wrap gap-2 text-orange-600 p-3">
+    <div className="flex flex-wrap gap-2 text-blue-600 p-3">
       {allIconsData.map((singleIcon, index) => (
         <div
           key={index}
           onClick={() => handleTheIconSelection(singleIcon)}
           className={`w-9 h-9  shadow-sm border border-slate-50 flex items-center 
           
-          justify-center rounded-lg hover:bg-orange-600 hover:text-white 
+          justify-center rounded-lg hover:bg-blue-600 hover:text-white 
           ${
             singleIcon.isSelected
-              ? "bg-orange-600 text-white"
-              : "bg-white text-orange-600"
+              ? "bg-blue-600 text-white"
+              : "bg-white text-blue-600"
           }`}
         >
           {singleIcon.icon}

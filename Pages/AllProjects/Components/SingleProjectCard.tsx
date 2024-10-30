@@ -69,14 +69,14 @@ function SingleProjectCard({ project }: { project: Project }) {
         {/* Title and Icon */}
         <div className="flex gap-3 items-center ">
           {/* Project Icon */}
-          <div className="bg-orange-600 flex justify-center items-center w-[38px] h-[38px] rounded-md">
+          <div className="bg-blue-600 flex justify-center items-center w-[38px] h-[38px] rounded-md">
             {getIconComponent(project.icon, "text-white", "23px")}
           </div>
           {/* Project Title */}
           <div className="flex  flex-col">
             <span
               onClick={showAllTasksOfProject}
-              className="font-semibold text-[19px] hover:text-orange-600 cursor-pointer"
+              className="font-semibold text-[19px] hover:text-blue-600 cursor-pointer"
             >
               {truncateString(project.title, 35)}
             </span>
@@ -129,7 +129,7 @@ function SingleProjectCard({ project }: { project: Project }) {
             <LibraryAdd
               onClick={openTheTaskWindow}
               className="text-slate-400 opacity-40 text-[26px] cursor-pointer hover:opacity-100
-            hover:text-orange-600"
+            hover:text-blue-600"
             />
             <span className="text-slate-400 opacity-45 text-[13px]">
               No tasks created yet...
@@ -150,7 +150,7 @@ function SingleProjectCard({ project }: { project: Project }) {
 
         <div className="text-[11px]  text-slate-400">
           {project.tasks.length > 3 && (
-            <span className="text-orange-600">
+            <span className="text-blue-600">
               +{project.tasks.length - 3} tasks
             </span>
           )}
@@ -166,7 +166,7 @@ function SingleProjectCard({ project }: { project: Project }) {
           <div className="w-full h-[7px] rounded-xl bg-slate-100 overflow-hidden">
             <div
               style={{ width: `${progressPercentage}%` }}
-              className={`  bg-orange-600 h-full rounded-r-xl`}
+              className={`  bg-blue-600 h-full rounded-r-xl`}
             ></div>
           </div>
         </div>

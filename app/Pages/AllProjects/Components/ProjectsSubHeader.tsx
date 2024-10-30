@@ -63,7 +63,7 @@ function ProjectsSubHeader() {
         <div
           ref={sortingLinkRef}
           onClick={clickedSortingLink}
-          className="flex gap-1 items-center cursor-pointer text-slate-800  hover:text-orange-600"
+          className="flex gap-1 items-center cursor-pointer text-slate-800  hover:text-blue-600"
         >
           <span className="">{sortingLabel}</span>
           {openSortingDropDown ? (

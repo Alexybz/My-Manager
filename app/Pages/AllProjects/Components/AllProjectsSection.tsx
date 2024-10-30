@@ -26,7 +26,7 @@ function AllProjectsSection({
   if (isLoading) {
     return (
       <div className="flex flex-col gap-3   py-40 justify-center items-center w-full  mt-16">
-        <CircularProgress value={100} className="text-orange-600" />
+        <CircularProgress value={100} className="text-blue-600" />
         <span className="text-slate-400 text-sm">Loading...</span>
       </div>
     );

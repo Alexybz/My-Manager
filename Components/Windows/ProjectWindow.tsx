@@ -246,10 +246,10 @@ function Header({ handleClose }: { handleClose: () => void }) {
   return (
     <div className="flex justify-between items-center pt-7 px-7">
       <div className="flex items-center gap-2">
-        <div className="p-[7px] bg-orange-200 rounded-lg flex items-center justify-center">
+        <div className="p-[7px] bg-blue-200 rounded-lg flex items-center justify-center">
           <BorderAllIcon
             sx={{ fontSize: "21px" }}
-            className="text-orange-600"
+            className="text-blue-600"
           />
         </div>
         <span className="font-semibold text-lg">
@@ -319,7 +319,7 @@ function ProjectInput({
 
         <div
           onClick={() => setOpenIconWindow(true)}
-          className="w-12 h-10 text-white flex items-center justify-center bg-orange-600 rounded-lg cursor-pointer hover:bg-orange-700"
+          className="w-12 h-10 text-white flex items-center justify-center bg-blue-600 rounded-lg cursor-pointer hover:bg-blue-700"
         >
           {selectedIcon ? (
             getIconComponent(selectedIcon?.name, "text-white")
@@ -360,7 +360,7 @@ function Footer({
 
       <button
         type="submit"
-        className="bg-orange-600 hover:bg-orange-700 text-white text-[13px] p-2 px-4 rounded-md transition-all"
+        className="bg-blue-600 hover:bg-blue-700 text-white text-[13px] p-2 px-4 rounded-md transition-all"
       >
         {isLoading
           ? "Saving..."

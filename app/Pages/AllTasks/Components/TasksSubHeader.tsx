@@ -72,10 +72,10 @@ function MyProjectsText() {
 
   return (
     <div className="flex items-center max-sm:gap-2 gap-3">
-      <div className="w-[41px] -mt-1 flex justify-center items-center h-[44px] rounded-md bg-orange-100">
+      <div className="w-[41px] -mt-1 flex justify-center items-center h-[44px] rounded-md bg-blue-100">
         <SplitscreenIcon
           sx={{ fontSize: "21px" }}
-          className="text-orange-600"
+          className="text-blue-600"
         />
       </div>
 
@@ -85,7 +85,7 @@ function MyProjectsText() {
           <div
             ref={projectTitleRef}
             onClick={openTheProjectDropDown}
-            className="text-slate-700 hover:text-orange-600 cursor-pointer flex gap-2 items-center"
+            className="text-slate-700 hover:text-blue-600 cursor-pointer flex gap-2 items-center"
           >
             <span className="text-lg">
               {chosenProject?.title || "All Projects"}
@@ -100,7 +100,7 @@ function MyProjectsText() {
         <div className="flex gap-1 items-center">
           <li className="text-[12px] h-[4px] w-[280px] max-sm:w-[170px] max-[420px]:w-[130px] bg-slate-200 rounded-md overflow-hidden">
             <div
-              className="h-full bg-orange-600 rounded-r-xl"
+              className="h-full bg-blue-600 rounded-r-xl"
               style={{ width: `${completionPercentage}%` }}
             ></div>
           </li>
@@ -147,7 +147,7 @@ function SortByButton() {
     <div
       ref={sortRef}
       className="flex max-sm:flex-col text-[15px] font-semibold gap-3 max-sm:gap-1 hover:cursor-pointer
-      hover:text-orange-600 text-slate-800 "
+      hover:text-blue-600 text-slate-800 "
     >
       <span className="text-slate-300">Sort By</span>
       <div

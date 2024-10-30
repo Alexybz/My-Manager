@@ -47,7 +47,7 @@ function SearchBar({ globalSearchProject, onChange }: SearchBarProps) {
 
   return (
     <div className="flex items-center">
-      <div className="border-b-2 border-orange-600 h-[39px] w-11 flex justify-center items-center">
+      <div className="border-b-2 border-blue-600 h-[39px] w-11 flex justify-center items-center">
         <SearchIcon
           className="text-slate-400 outline-none"
           sx={{ fontSize: "26px" }}
@@ -81,10 +81,10 @@ function AddProjectButton() {
     <div className="flex gap-3 items-center">
       <button
         onClick={handleClickedAddProjectBtn}
-        className="bg-orange-600 text-white px-2 text-[14px] rounded-md flex gap-1 items-center p-2 pr-3 max-sm:pr-2"
+        className="bg-blue-600 text-white px-2 text-[14px] rounded-md flex gap-1 items-center p-2 pr-3 max-sm:pr-2"
       >
         <AddIcon sx={{ fontSize: "22px" }} className="mt-[2px]" />
-        <span className="max-sm:hidden">New Project</span>
+        <span className="max-sm:hidden bg-blue-600">New Project</span>
       </button>
       <div className="max-[940px]:block hidden">
         <MenuIcon

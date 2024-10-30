@@ -95,9 +95,9 @@ function AllProjectsItem() {
       <div className="flex gap-2 items-center">
         {/* Icon */}
         <div>
-          <DensitySmallIcon className="text-orange-600 text-[22px]" />
+          <DensitySmallIcon className="text-blue-600 text-[22px]" />
         </div>
-        <span className="text-[13px] mt-1 hover:text-orange-600 cursor-pointer">
+        <span className="text-[13px] mt-1 hover:text-blue-600 cursor-pointer">
           All Projects
         </span>
       </div>
@@ -128,16 +128,16 @@ function SingleProject({ singleProject }: { singleProject: Project }) {
       onClick={() => handleTheProjectClicked(singleProject.id)}
       className={` ${
         chosenProject?.id === singleProject.id &&
-        "border border-orange-600 bg-orange-50"
+        "border border-blue-600 bg-blue-50"
       } flex items-center justify-between  gap-7 p-2 rounded-lg text-slate-600  cursor-pointer  `}
     >
       <div className={`flex gap-2 items-center `}>
         {/* Icon */}
         <div>
           {" "}
-          {getIconComponent(singleProject.icon, "text-orange-600", "22px")}{" "}
+          {getIconComponent(singleProject.icon, "text-blue-600", "22px")}{" "}
         </div>
-        <span className="text-[13px] mt-1 hover:text-orange-600 cursor-pointer">
+        <span className="text-[13px] mt-1 hover:text-blue-600 cursor-pointer">
           {singleProject.title}
         </span>
       </div>

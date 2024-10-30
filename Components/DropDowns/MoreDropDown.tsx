@@ -79,7 +79,7 @@ function MoreDropDown() {
           key={dropDownOption.id}
           onClick={() => clickedItemHandler(dropDownOption.id)}
           className={`flex gap-1 items-center text-slate-400 cursor-pointer
-          hover:text-orange-600 ${
+          hover:text-blue-600 ${
             dropDownOption.id === 2 && "hover:text-red-600"
           }`}
         >

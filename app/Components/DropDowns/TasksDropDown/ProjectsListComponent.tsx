@@ -44,15 +44,15 @@ export default function ProjectsListComponent() {
       <div
         onClick={() => updateTheProjectState(index)}
         className={` ${
-          singleProject.isSelected && "bg-orange-50 border border-orange-200"
+          singleProject.isSelected && "bg-blue-50 border border-blue-200"
         }  flex items-center gap-2 p-[7px] rounded-md  cursor-pointer   `}
       >
         <div className={`flex gap-2 items-center `}>
           {/* Icon */}
           <div>
-            {getIconComponent(singleProject.icon, "text-orange-600", "22px")}{" "}
+            {getIconComponent(singleProject.icon, "text-blue-600", "22px")}{" "}
           </div>
-          <span className="mt-[3px] hover:text-orange-600 text-slate-500">
+          <span className="mt-[3px] hover:text-blue-600 text-slate-500">
             {singleProject.title}
           </span>
         </div>

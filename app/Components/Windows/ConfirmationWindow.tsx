@@ -109,7 +109,7 @@ function ConfirmationWindow() {
           </button>
           <button
             onClick={deleteFunction}
-            className="px-4 py-2 bg-orange-600 hover:bg-orange-700 rounded-lg text-white "
+            className="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg text-white "
           >
             {isLoading ? "Deleting..." : "Delete"}
           </button>

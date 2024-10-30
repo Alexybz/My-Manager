@@ -47,11 +47,11 @@ export default function PriorityListComponent() {
       <div
         onClick={() => updateThePriority(index)}
         className={` ${
-          singlePriority.isSelected && "bg-orange-50 border border-orange-200"
+          singlePriority.isSelected && "bg-blue-50 border border-blue-200"
         }  flex items-center gap-2 p-[7px] rounded-md  cursor-pointer`}
       >
         <div>{singlePriority.icon}</div>
-        <p className="text-slate-500 hover:text-orange-600 text-[14px]">
+        <p className="text-slate-500 hover:text-blue-600 text-[14px]">
           {singlePriority.name}
         </p>
       </div>

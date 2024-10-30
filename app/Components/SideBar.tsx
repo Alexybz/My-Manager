@@ -61,7 +61,7 @@ function SideBar() {
     const { user } = useUser();
 
     if (!user) {
-      return <div className="bg-orange-600 w-9 h-9 rounded-md"></div>;
+      return <div className="bg-blue-600 w-9 h-9 rounded-md"></div>;
     }
 
     return (
@@ -145,14 +145,14 @@ function SideBar() {
               <IconComponent
                 sx={{ fontSize: "25px" }}
                 className={` ${
-                  menuItem.isSelected ? "text-orange-600" : "text-slate-300"
+                  menuItem.isSelected ? "text-blue-600" : "text-slate-300"
                 }   `}
               />
 
               {openSideBar && (
                 <span
                   className={`${
-                    menuItem.isSelected ? "text-orange-600" : "text-slate-300"
+                    menuItem.isSelected ? "text-blue-600" : "text-slate-300"
                   } `}
                 >
                   {menuItem.name}
@@ -170,7 +170,7 @@ function SideBar() {
     return (
       <div className="  flex items-center gap-2 justify-center">
         <TaskAltIcon
-          className="text-orange-600 font-bold"
+          className="text-blue-600 font-bold"
           sx={{ fontSize: "41px" }}
         />
 

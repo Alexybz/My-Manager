@@ -139,14 +139,14 @@ function Tabs() {
           onClick={() => switchTabs(index)}
           className={` flex gap-2 cursor-pointer ${
             singleTabOption.isSelected
-              ? "text-orange-600 font-semibold"
+              ? "text-blue-600 font-semibold"
               : "text-slate-300"
           } `}
         >
           <span>{singleTabOption.name}</span>
           <span
             className={`${
-              singleTabOption.isSelected ? "bg-orange-600 " : "bg-slate-300"
+              singleTabOption.isSelected ? "bg-blue-600 " : "bg-slate-300"
             } text-white px-2 rounded-md max-[420px]:hidden`}
           >
             {singleTabOption.id === 1 ? countOnGoingTasks() : completedTasks()}
@@ -235,9 +235,9 @@ function SingleTask({ task }: { task: Task }) {
     <div className="flex gap-1 items-center">
       <Checkbox
         sx={{
-          color: "orangered",
+          color: "blue",
           "&.Mui-checked": {
-            color: "orange",
+            color: "blue",
           },
         }}
         onClick={updateStatusFunction}
@@ -251,10 +251,10 @@ function SingleTask({ task }: { task: Task }) {
           {/* Wallet Icon */}
           <div>
             <div
-              className="  bg-orange-200 rounded-lg p-2 flex 
+              className="  bg-blue-200 rounded-lg p-2 flex 
             items-center justify-center"
             >
-              {getIconComponent(task.icon, "text-orange-600", "19px")}
+              {getIconComponent(task.icon, "text-blue-100", "19px")}
             </div>
           </div>
           {/* Wallet Name */}
@@ -267,7 +267,7 @@ function SingleTask({ task }: { task: Task }) {
             }}
             className="flex flex-col"
           >
-            <span className="font-bold hover:text-orange-600 cursor-pointer max-sm:text-sm">
+            <span className="font-bold hover:text-blue-600 cursor-pointer max-sm:text-sm">
               {task.title}
             </span>
             <div className="flex">
@@ -309,11 +309,11 @@ function SingleTask({ task }: { task: Task }) {
                 setOpenTasksWindow(true);
               }}
               className=" rounded-lg p-2  flex items-center justify-center 
-              cursor-pointer bg-orange-200 hover:bg-orange-300 transition-all"
+              cursor-pointer bg-blue-200 hover:bg-blue-300 transition-all"
             >
               <EditOutlinedIcon
                 sx={{ fontSize: "17px" }}
-                className="text-orange-600"
+                className="text-blue-600"
               />
             </div>
 

@@ -218,12 +218,12 @@ function StatsRightSideBar() {
       }
       return (
         <li onClick={openTheProject} className="  p-3 flex gap-2 items-center">
-          <div className="w-8 h-8 bg-orange-600 rounded-md justify-center items-center flex text-white">
+          <div className="w-8 h-8 bg-blue-600 rounded-md justify-center items-center flex text-white">
             <SplitscreenIcon sx={{ fontSize: "19px" }} />
           </div>
 
           <ul>
-            <li className="text-[14px] font-semibold cursor-pointer hover:text-orange-600 select-none">
+            <li className="text-[14px] font-semibold cursor-pointer hover:text-blue-600 select-none">
               {truncateString(project.title, 40)}
             </li>
             <li className="text-[12px]   text-slate-400">

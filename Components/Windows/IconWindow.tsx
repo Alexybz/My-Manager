@@ -32,10 +32,10 @@ function IconsWindow() {
       <div className="flex justify-between items-center pt-7 px-7 mb-8">
         <div className="flex items-center gap-2">
           {/* Icons */}
-          <div className="  p-2 bg-orange-200 rounded-lg flex items-center justify-center">
+          <div className="  p-2 bg-blue-200 rounded-lg flex items-center justify-center">
             <AppsIcon
               sx={{ fontSize: 21 }}
-              className="text-orange-400 text-[17px]"
+              className="text-blue-400 text-[17px]"
               onClick={() => setOpenIconWindow(false)}
             />
           </div>

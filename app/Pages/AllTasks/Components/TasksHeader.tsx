@@ -28,7 +28,7 @@ function TasksHeader() {
 
     return (
       <div className=" flex  items-center">
-        <div className="border-b-2 border-orange-600 h-[39px] w-11 justify-center flex items-center">
+        <div className="border-b-2 border-blue-600 h-[39px] w-11 justify-center flex items-center">
           <SearchIcon
             className="text-slate-400 outline-none"
             sx={{ fontSize: "26px" }}
@@ -60,7 +60,7 @@ function TasksHeader() {
           disabled={allProjects.length === 0}
           style={{ opacity: `${allProjects.length === 0 && "50%"}` }}
           onClick={() => setOpenTasksWindow(!openTasksWindow)}
-          className="bg-orange-600 text-white p-2   justify-center text-[14px] rounded-md flex gap-1 items-center"
+          className="bg-blue-600 text-white p-2   justify-center text-[14px] rounded-md flex gap-1 items-center"
         >
           <AddIcon sx={{ fontSize: "22px" }} className="mt-[2px]" />
           <span className="max-sm:hidden pr-2 ">New Task</span>

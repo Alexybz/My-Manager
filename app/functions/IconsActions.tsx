@@ -113,7 +113,7 @@ export const getIconComponent = (
   fontSize?: string
 ): JSX.Element => {
   const defaultFontSize = "27px";
-  const defaultTextColor = "text-orange-600";
+  const defaultTextColor = "text-blue-600";
 
   const iconProps = {
     sx: { fontSize: fontSize || defaultFontSize },

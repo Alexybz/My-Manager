@@ -201,8 +201,8 @@ function SortingDropDown() {
                     handleOptionSelected(categoryIndex, optionIndex)
                   }
                   className={`${
-                    option.selected ? "text-orange-600" : " text-slate-500"
-                  } cursor-pointer hover:text-orange-600`}
+                    option.selected ? "text-blue-600" : " text-slate-500"
+                  } cursor-pointer hover:text-blue-600`}
                 >
                   {option.label}
                 </span>
