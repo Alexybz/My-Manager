@@ -8,9 +8,9 @@
 - [Environment Variables](#environment-variables)
 - [Features](#features)
 - [Architecture](#architecture)
-- [Contributing](#contributing)
 
 ## Installation
+
 To run the application, open your terminal and enter the following commands:
 
 ```bash
@@ -19,7 +19,9 @@ cd my-project
 # Install dependencies
 npm install
 ```
+
 ## Environment Variables
+
 ```bash
 # Create a .env file in the root directory and add the following variables:
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
@@ -50,5 +52,3 @@ The project uses the following architecture:
 - **Backend/API**: Serverless functions in Next.js handle API requests, user data, and authentication.
 - **Database**: MongoDB for persistent data storage, with Mongoose as the ODM (Object Data Modeling) library.
 - **Real-Time Communication**: WebSockets facilitate live updates for seamless user experience.
-
-
