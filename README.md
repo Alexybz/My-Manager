@@ -10,7 +10,6 @@
 - [Features](#features)
 - [Architecture](#architecture)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 To run the application, open your terminal and enter the following commands:
@@ -33,6 +32,7 @@ WEBHOOK_SECRET=your_webhook_secret
 
 # Start the development server
 npm run dev
+```
 
 
 ## Features
