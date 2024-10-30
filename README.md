@@ -6,7 +6,6 @@
 
 - [Installation](#installation)
 - [Environment Variables](#environment-variables)
-- [Usage](#usage)
 - [Features](#features)
 - [Architecture](#architecture)
 - [Contributing](#contributing)
@@ -19,7 +18,9 @@ To run the application, open your terminal and enter the following commands:
 cd my-project
 # Install dependencies
 npm install
-
+```
+## Enviornment Variables
+```bash
 # Create a .env file in the root directory and add the following variables:
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 CLERK_SECRET_KEY=your_clerk_secret_key
@@ -33,7 +34,6 @@ WEBHOOK_SECRET=your_webhook_secret
 # Start the development server
 npm run dev
 ```
-
 
 ## Features
 
