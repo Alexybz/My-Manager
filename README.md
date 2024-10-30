@@ -19,7 +19,7 @@ cd my-project
 # Install dependencies
 npm install
 ```
-## Enviornment Variables
+## Environment Variables
 ```bash
 # Create a .env file in the root directory and add the following variables:
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
