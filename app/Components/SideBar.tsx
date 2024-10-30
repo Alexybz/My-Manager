@@ -170,7 +170,7 @@ function SideBar() {
     return (
       <div className="  flex items-center gap-2 justify-center">
         <TaskAltIcon
-          className="text-blue-600 font-bold"
+          className="text-blue-599 font-bold"
           sx={{ fontSize: "41px" }}
         />
 
