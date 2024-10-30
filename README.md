@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Manager
 
-## Getting Started
+**Description**: A project management app that keeps track of the progress you've made towards completion.
 
-First, run the development server:
+## Table of Contents
+
+- [Installation](#installation)
+- [Environment Variables](#environment-variables)
+- [Usage](#usage)
+- [Features](#features)
+- [Architecture](#architecture)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+To run the application, open your terminal and enter the following commands:
 
 ```bash
+# Navigate to the project directory
+cd my-project
+# Install dependencies
+npm install
+
+# Create a .env file in the root directory and add the following variables:
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/dashboard
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/dashboard
+MONGO_URL=your_mongodb_connection_url
+WEBHOOK_SECRET=your_webhook_secret
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Real-Time Updates**: Integrated WebSockets for instant updates, such as notifications and task assignments.
+- **User Authentication**: Managed through Clerk for seamless, secure user sign-in and sign-up.
+- **Database Integration**: MongoDB stores and retrieves user data for persistent storage.
+- **Responsive UI**: The app is mobile-friendly, designed with flexible layouts.
 
-## Learn More
+## Architecture
 
-To learn more about Next.js, take a look at the following resources:
+The project uses the following architecture:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend**: Built with Next.js, handling routing and dynamic page generation.
+- **Backend/API**: Serverless functions in Next.js handle API requests, user data, and authentication.
+- **Database**: MongoDB for persistent data storage, with Mongoose as the ODM (Object Data Modeling) library.
+- **Real-Time Communication**: WebSockets facilitate live updates for seamless user experience.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
